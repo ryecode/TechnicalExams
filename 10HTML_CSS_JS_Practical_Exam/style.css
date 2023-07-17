@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    height: 100%;
+    place-content: center;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    background-image: url("https://ryecode.github.io/TechnicalExams/10HTML_CSS_JS_Practical_Exam/imageBank/background.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;    
+}
+
+.female {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+    opacity: 0;
+    margin-top: 100px;
+
+}
+
+#femaleExit {
+    animation: fadeOut 0.5s ease-out 2.5s forwards;
+}
+
+.headline1 {
+    text-align: center;
+    animation: slideLeft 1s ease-out 1s forwards;
+    transform: translateX(-110%);
+}
+
+#headline1Exit {
+    animation: fadeOutUp 0.5s ease-in-out 3s forwards;
+}
+
+.headline2 {
+    display: inline;
+    position: absolute;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 300px;
+    padding-top: 60px;
+    animation: slideRight 0.5s linear 2.75s forwards;
+    transform: translateX(-210%);
+}
+
+.logo {
+    display: inline;
+    position: absolute;
+    text-align: right;
+    margin-left: 950px;
+    transform: translateY(-160px);
+    animation: slideLeft 0.5s linear 4s forwards;
+    transform: translateX(-500%);
+    margin-top: -170px;
+}
+
+.subHeadline {
+    display: inline;
+    position: absolute;
+    text-align: right;
+    margin-left: 870px;
+    transform: translateY(190px);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    animation: fadeIn 0.25s ease 3.5s forwards;
+    opacity: 0;
+}
+
+.learnMore {
+    display: inline;
+    position: absolute;
+    margin-left: 600px;
+    transform: translateY(550px);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    animation: fadeIn 0.25s linear 3.75s forwards;
+    opacity: 0;
+}
+
+.replay {
+    display: inline;
+    position: absolute;
+    margin-left: 650px;
+    transform: translateY(700px);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    animation: fadeIn 0.25s linear 4.5s forwards;
+    opacity: 0;
+}
+
+/* KEYFRAMES */
+
+@keyframes slideLeft { 
+    to {opacity: 1;}
+    
+          0% {transform: translateX(-200%);}
+          100% {transform: translateX(0)}    
+    
+    }
+
+@keyframes slideRight { 
+    to {opacity: 1;}
+    
+            0% {transform: translateX(200%);}
+            100% {transform: translateX(0);}    
+    
+    }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut { 
+    to {opacity: 0;}  
+   
+}
+
+@keyframes fadeOutUp { 
+    to {opacity: 0;}  
+          0% {
+            transform: scale(1);
+            }
+          100% {
+            transform-origin: top right;
+            transform: scale(0);
+        }      
+}
